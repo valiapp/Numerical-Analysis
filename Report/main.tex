@@ -12,12 +12,11 @@
 \usepackage{cleveref}
 \hypersetup{pdfborder=0 0 0}
 \addto\captionsgreek{
-    % Second argument is singular, third is plural
     \crefname{figure}{Σχήμα.}{Σχήματα.}
     \Crefname{figure}{Σχήμα.}{Σχήματα.}
 }
 
-\title{Προγραμματιστικές Εργασίες στην Αριθμητική Ανάλυση \\}
+\title{Προγραμματιστικές Εργασίες στην Αριθμητική Ανάλυση}
     
 \author{}
 \date{}
@@ -33,7 +32,7 @@
     \vspace*{\fill}
     Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης\\
     Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών\\
-    4ο εξάμηνο\\
+    4\textsuperscript{ο} εξάμηνο\\
 \end{center}
 \newpage
 
@@ -47,8 +46,9 @@
 Η υλοποίηση των Κανόνων Αριθμητικής ολοκλήρωσης εμπεριέχονται στο αρχείο με ονομασία
 \foreignlanguage{english}{Numerical\_Integration\_Methods.py}
 \vspace*{\fill}
+
 \subsection{Ερώτημα β}
-Στα \autoref{(Left_Rectangular_Rule)}, \autoref{(Right_Rectangular_Rule)}, \autoref{(Trapezoidal_Rule)} και \autoref{(Simpson_Rule)} απεικονίζονται τα γραφήματα του απολύτου σφάλματος για κάθε μέθοδο. Για κάθε διάδα γραφημάτων, στα αριστερά απεικονίζεται το απόλυτο σφάλμα, το οποίο υπολογίζεται λαμβάνοντας υπόψη το πραγματικό αποτέλεσμα της ολοκλήρωσης (όπως αυτό δόθηκε από την εκφώνηση) και την τιμή του ολοκληρώματος που προκύπτει με την χρήση των μεθόδων αριθμητικής ολοκλήρωσης που υλοποιήθηκαν στο αρχείο \foreignlanguage{english}{Numerical\_Integration\_Methods.py}. Στα δεξιά φαίνεται η σύγκριση του σφάλματος που αναφέρθηκε προηγουμένως με το σφάλμα, όπως αυτό υπολογίστηκε από τους γνωστούς κανόνες υπολογισμού μεγίστου σφάλματος οι οποίοι υπάρχουν υλοποιημένοι στο αρχείο \foreignlanguage{english}{Numerical\_Integration\_Methods\_Errors.py}.  
+Στα \autoref{(Left_Rectangular_Rule)}, \autoref{(Right_Rectangular_Rule)}, \autoref{(Trapezoidal_Rule)} και \autoref{(Simpson_Rule)} απεικονίζονται τα γραφήματα του απολύτου σφάλματος για κάθε μέθοδο. Σε κάθε γράφημα απεικονίζεται το απόλυτο σφάλμα, το οποίο υπολογίζεται λαμβάνοντας υπόψη το πραγματικό αποτέλεσμα της ολοκλήρωσης (όπως αυτό δόθηκε από την εκφώνηση) και την τιμή του ολοκληρώματος που προκύπτει με την χρήση των μεθόδων αριθμητικής ολοκλήρωσης που υλοποιήθηκαν στο αρχείο \foreignlanguage{english}{Numerical\_Integration\_Methods.py}. Θα πρέπει να αναφέρουμε ότι το σφάλμα ενισχύεται από την ύπαρξη σφάλματος κατά την αποθήκευση των αριθμών κινητής υποδιαστολής στην μνήμη του υπολογιστή.
 
 \vspace*{\fill}
 \noindent
@@ -60,10 +60,6 @@
 		\begin{subfigure}[c]{.8\textwidth}    
 			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_1.png}
 		\end{subfigure}%
-
-    	\begin{subfigure}[c]{.8\textwidth}
-			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_2.png}
-		\end{subfigure}
 	\end{adjustbox}
 	\caption{Κανόνας Αριστερού Παραλληλογράμμου}
 	
@@ -77,13 +73,8 @@
 		\begin{subfigure}[c]{.8\textwidth}    
 			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_3.png}
 		\end{subfigure}%
-
-	    \begin{subfigure}[c]{.8\textwidth}    
-			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_4.png}
-		\end{subfigure}%
-		
 	\end{adjustbox}
-\caption{Κανόνας Δεξιού Παραλληλογράμμου}
+    \caption{Κανόνας Δεξιού Παραλληλογράμμου}
     \label{(Right_Rectangular_Rule)}
 \end{figure}
 
@@ -93,11 +84,6 @@
 		\begin{subfigure}[c]{.8\textwidth}    
 			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_5.png}
 		\end{subfigure}%
-
-	\begin{subfigure}[c]{.8\textwidth}    
-			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_6.png}
-		\end{subfigure}%
-		
 	\end{adjustbox}
 \caption{Κανόνας Τραπεζίου}
 \label{(Trapezoidal_Rule)}
@@ -111,10 +97,6 @@
 		\begin{subfigure}[c]{.8\textwidth}    
 			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_7.png}
 		\end{subfigure}%
-
-	\begin{subfigure}[c]{.8\textwidth}    
-			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_8.png}
-		\end{subfigure}%
 	\end{adjustbox}
 
 \caption{Κανόνας \foreignlanguage{english}{Simpson}}
@@ -123,8 +105,49 @@
 
 \vspace*{\fill}
 \subsection{Ερώτημα γ}
-Όπως αναμέναμε, το υπολογιζόμενο απόλυτο σφάλμα κάθε μεθόδου, όπως αυτό υπολογίζεται από το πραγματικό αποτέλεσμα της ολοκλήρωσης (το οποίο δόθηκε από την εκφώνηση) και την τιμή του ολοκληρώματος που προκύπτει με την χρήση των μεθόδων αριθμητικής ολοκλήρωσης είναι παντού μικρότερο από το μέγιστο σφάλμα, το οποίο δίνεται από τους κανόνες υπολογισμού σφάλματος των μεθόδων. 
+\noindent
+\\
+Στα \autoref{(Errors 1)} και \autoref{(Errors 2)} φαίνονται τα γραφήματα από τον υπολογισμό του μέγιστου σφάλματος, όπως αυτό υπολογίζεται από τους τύπους που δίνονται στο βιβλίο του Λ.Πιτσούλη, "Εισαγωγή στην Αριθμητική Ανάλυση", 4\textsuperscript{η} Έκδοση, Εκδόσεις Τζιόλα. Παρατηρείται ότι το απόλυτο σφάλμα που παρουσίαζεται στο ερώτημα β είναι σε κάποιες περιπτώσεις μεγαλύτερο του μεγίστου απόλυτου σφάλματος που αναφέρθηκε προηγουμένως. Αυτό οφείλεται σε σφάλματα κατά την αποθήκευση των αριθμών κινητής υποδιαστολής στην μνήμη του υπολογιστή.
+
 \vspace*{\fill}
+
+\begin{figure}[H]
+
+    \centering	
+	\begin{adjustbox}{center}
+        \begin{subfigure}[c]{.8\textwidth}
+			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_2.png}
+		\end{subfigure}
+
+		\begin{subfigure}[c]{.8\textwidth}    
+			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_4.png}
+		\end{subfigure}%		
+	\end{adjustbox}
+	\caption{Μέγιστο απόλυτο σφάλμα ολοκλήρωσης (1)}
+	\label{(Errors 1)}
+\end{figure}
+
+\vspace*{\fill}
+\newpage
+
+\begin{figure}[H]
+
+    \centering	
+	\begin{adjustbox}{center}
+		\begin{subfigure}[c]{.8\textwidth}    
+			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_6.png}
+		\end{subfigure}%
+		
+		\begin{subfigure}[c]{.8\textwidth}    
+			\includegraphics[width=1\textwidth,height=\textheight,keepaspectratio]{media/1/Figure_8.png}
+		\end{subfigure}%
+	\end{adjustbox}
+	\caption{Μέγιστο απόλυτο σφάλμα ολοκλήρωσης (2)}
+	\label{(Errors 2)}
+\end{figure}		
+
+\vspace*{\fill}
+
 \newpage
 \section{Εργασία 2}
 
@@ -137,7 +160,7 @@
 Το πρόβλημα που αναφέρεται στην εκφώνηση μοντελοποιείται και επιλύεται στο αρχείο \foreignlanguage{english}{Differential\_Equations\_Problem\_Solving.py}. Όπως αναφέρουν οι οδηγίες της εκφώνησης χρησιμοποιούμε αρχικές συνθήκες $ x_0(0) = 20, x_1(0) = 1, t_{max} = 200 $ και μικρό βήμα διακριτοποίησης $ dt = 0.01 $.
 \vspace*{\fill}
 \subsection{Ερώτημα γ}
-Στο \autoref{(dt=0.01)}, εμφανίζονται τα αποτελέσματα της επίλυσης της δοθείσας διαφορικής εξίσωσης. Στα αριστερά σχεδιάζεται η πληθυσμιακή εξέλιξη των δύο ειδών σε σχέχη με τον χρόνο. Στα δεξιά, απεικονίζεται η ανταλλαγή πληθυσμιακής κυριαρχίας.
+Στο \autoref{(dt=0.01)}, εμφανίζονται τα αποτελέσματα της επίλυσης της δοθείσας διαφορικής εξίσωσης. Στα αριστερά σχεδιάζεται η πληθυσμιακή εξέλιξη των δύο ειδών σε σχέση με τον χρόνο. Στα δεξιά, απεικονίζεται η ανταλλαγή πληθυσμιακής κυριαρχίας.
 \vspace*{\fill}
 \begin{figure}[H]
     \centering
@@ -157,14 +180,14 @@
 \vspace*{\fill}
 \newpage
 \noindent
-Όπως είναι εμφανές στο \autoref{(dt=0.01)}, η πληθυσμιακή εξέλιξη των λαγών εξαρτάται άμεσα από αυτήν των αλεπούδων και αντίστροφα. Πιο συγκεκριμένα, αύξηση των λαγών συνεπάγεται την ραγδαία εκθετική αύξηση των αλεπούδων. Από την άλλη, μείωση των λαγών οδηγεί σε εκθετική μείωση (με μικρότερη κλίση συγκριτικά με αυτή της αύξησης) των αλεπούδων, ενώ αύξηση των αλεπούδων οδηγεί στην μείωση των λαγών. Το μοτίβο επαναλαμβάνεται περιοδικά. Επιπροσθέτως, ο μέγιστος αριθμός ατόμων κάθε είδους δείχνει να αυξάνεται με την πάροδο του χρόνου, όπως φαίνεται στο \autoref{(max)}, στο οποίο το $ t\_{max} $ είναι ίσο με 400.
+Όπως είναι εμφανές στο \autoref{(dt=0.01)}, η πληθυσμιακή εξέλιξη των λαγών εξαρτάται άμεσα από αυτήν των αλεπούδων και αντίστροφα. Πιο συγκεκριμένα, αύξηση των λαγών συνεπάγεται την ραγδαία εκθετική αύξηση των αλεπούδων. Από την άλλη, μείωση των λαγών οδηγεί σε εκθετική μείωση (με μικρότερη κλίση συγκριτικά με αυτή της αύξησης) των αλεπούδων, ενώ αύξηση των αλεπούδων οδηγεί στην μείωση των λαγών. Το μοτίβο επαναλαμβάνεται περιοδικά. Επιπροσθέτως, ο μέγιστος αριθμός ατόμων κάθε είδους δείχνει να αυξάνεται με την πάροδο του χρόνου, όπως φαίνεται στο \autoref{(max)}, στο οποίο το $ t_{max} $ είναι ίσο με 400.
 
 \begin{figure}[H]
     \centering
 	\begin{adjustbox}{center}
 	
-		\begin{subfigure}[c]{1.2\textwidth}    
-			\includegraphics[width=1.2\textwidth,height=\textheight,keepaspectratio]{media/2/Figure_1.png}
+		\begin{subfigure}[c]{0.8\textwidth}    
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{media/2/Figure_1.png}
 		\end{subfigure}%
 
 	\end{adjustbox}
