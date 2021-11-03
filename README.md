@@ -16,6 +16,6 @@
 `Differential_Equation_Problem_Solving.py` file contains the solution of a system of equations requested by the [assignment](https://github.com/valiapp/Numerical-Analysis/blob/master/Report/Project_NA.pdf ).
 
 ## Authors
-[Thanasis Tsamouridis](https://github.com/tsamourid) <br>
+[Thanasis Tsamouridis](https://github.com/tsamouridis) <br>
 [Vasiliki Pappa](https://github.com/valiapp)
 
